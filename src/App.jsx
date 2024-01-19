@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Header from "./containers/HeaderComponents/Header/Header";
 import Main from "./containers/Main/Main";
 import Values from "./containers/Values/Values";
-// import Electricity from "./containers/Electricity/Electricity";
+import Electricity from "./containers/Electricity/Electricity";
 // import Cases from "./containers/Cases/Cases";
 // import Faq from "./containers/Faq/Faq";
 // import Contact from "./containers/Contact/Contact";
@@ -39,7 +39,7 @@ function App() {
 
       <Main />
       <Values deviceType={deviceType} />
-      {/* <Electricity /> */}
+      <Electricity />
       {/* <Cases deviceType={deviceType} /> */}
       {/* <Faq /> */}
       {/* <Contact /> */}
