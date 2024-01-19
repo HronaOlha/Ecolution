@@ -5,7 +5,7 @@ import Main from "./containers/Main/Main";
 import Values from "./containers/Values/Values";
 import Electricity from "./containers/Electricity/Electricity";
 import Cases from "./containers/Cases/Cases";
-// import Faq from "./containers/Faq/Faq";
+import Faq from "./containers/Faq/Faq";
 // import Contact from "./containers/Contact/Contact";
 // import Footer from "./containers/Footer/Footer";
 
@@ -41,7 +41,7 @@ function App() {
       <Values deviceType={deviceType} />
       <Electricity />
       <Cases deviceType={deviceType} />
-      {/* <Faq /> */}
+      <Faq />
       {/* <Contact /> */}
 
       {/* <Footer /> */}
