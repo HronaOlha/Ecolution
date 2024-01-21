@@ -23,6 +23,7 @@ const Main = () => {
   return (
     <MainSection id="main" aria-label="main section">
       <h1>Renewable energy for any task</h1>
+
       <Text>
         Development and implementation of renewable non-polluting energy
         sources, generating power generation using energy wind, sun, water,
