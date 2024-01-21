@@ -17,12 +17,10 @@ const Logo = () => {
           <use href={Ecosolution + "#ecosolution"} width="100%" height="100%" />
         </Svg>
       </div> */}
-      <Svg width="31px" height="18px">
-        {/* <title>Greenergy for life</title> */}
+      <Svg>
         <use href={Emblem + "#emblem"} width="100%" height="100%" />
       </Svg>
-      <Svg width="170px" height="30px">
-        {/* <title>Greenergy for life</title> */}
+      <Svg>
         <use href={Ecosolution + "#ecosolution"} width="100%" height="100%" />
       </Svg>
       <Svg width="63px" height="21px">
