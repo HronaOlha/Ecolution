@@ -1,7 +1,7 @@
 // import Emblem from "../../images/emblem.svg";
 // import Ecosolution from "../../images/ecosolution.svg";
-import Emblem from "../../../public/emb.svg";
-import Ecosolution from "../../../public/eco.svg";
+import Emblem from "../../images/emb.svg";
+import Ecosolution from "../../images/eco.svg";
 import Slogan from "../../images/slogan.svg";
 
 import { LogoContainer, Svg } from "./Logo.styled";

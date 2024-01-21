@@ -19,11 +19,16 @@ import {
   ButtonComponent,
 } from "./Main.styled";
 
+import Ecosolution from "../../images/eco.svg";
+
 const Main = () => {
   return (
     <MainSection id="main" aria-label="main section">
       <h1>Renewable energy for any task</h1>
-
+      <svg width="170px" height="30px">
+        <title>Greenergy for life</title>
+        <use href={Ecosolution + "#ecosolution"} width="100%" height="100%" />
+      </svg>
       <Text>
         Development and implementation of renewable non-polluting energy
         sources, generating power generation using energy wind, sun, water,
