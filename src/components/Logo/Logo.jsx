@@ -1,17 +1,17 @@
 // import Emblem from "../../images/emblem.svg";
 // import Ecosolution from "../../images/ecosolution.svg";
 import Emblem from "../../images/emb.svg";
-import Ecosolution from "../../images/eco.svg";
+import Ecosolution from "../../../public/eco.svg";
 import Slogan from "../../images/slogan.svg";
 
 import { LogoContainer, Svg } from "./Logo.styled";
 
-const dataURItoBlobUrl = (dataURI) => {
+function dataURItoBlobUrl(dataURI) {
   const svg = decodeURI(dataURI).split(",")[1];
   const blob = new Blob([svg], { type: "image/svg+xml" });
 
   return URL.createObjectURL(blob);
-};
+}
 
 const blobUrl = dataURItoBlobUrl(Ecosolution);
 
