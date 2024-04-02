@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HeaderSection = styled.header`
   position: fixed;
@@ -8,6 +8,7 @@ export const HeaderSection = styled.header`
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   padding-top: 36px;
   padding-bottom: 36px;
