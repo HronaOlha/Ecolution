@@ -1,10 +1,10 @@
-import { forwardRef } from 'react';
-import PropTypes from 'prop-types';
-import { IoCloseOutline } from 'react-icons/io5';
-import { GoArrowUpRight } from 'react-icons/go';
+import { forwardRef } from "react";
+import PropTypes from "prop-types";
+import { IoCloseOutline } from "react-icons/io5";
+import { GoArrowUpRight } from "react-icons/go";
 
-import { links } from '../../../constants/constants';
-import sprite from '../../../images/sprite.svg';
+import { links } from "../../../constants/constants";
+import sprite from "../../../images/sprite.svg";
 
 import {
   Overlay,
@@ -15,12 +15,13 @@ import {
   ItemText,
   SocialsContainer,
   Socials,
-} from './BurgerMenu.styled';
+} from "./BurgerMenu.styled";
 
+// eslint-disable-next-line react/display-name
 const BurgerMenu = forwardRef(({ handleMenuToggle }, ref) => {
   return (
-    <Overlay>
-      <BurgerContainer aria-label="Hamburger menu" ref={ref}>
+    <Overlay ref={ref}>
+      <BurgerContainer aria-label="Hamburger menu">
         <div>
           <CloseContainer onClick={handleMenuToggle}>
             <IoCloseOutline />
@@ -28,7 +29,7 @@ const BurgerMenu = forwardRef(({ handleMenuToggle }, ref) => {
           </CloseContainer>
 
           <PointsList>
-            {links.map(item => (
+            {links.map((item) => (
               <MenuItem key={item.id} onClick={handleMenuToggle}>
                 <ItemText href={item.link}>{item.value}</ItemText>
                 <GoArrowUpRight />
@@ -39,12 +40,12 @@ const BurgerMenu = forwardRef(({ handleMenuToggle }, ref) => {
         <SocialsContainer>
           <Socials href="/" target="_blank" rel="noopener noreferrer nofollow">
             <svg height={24} width={24}>
-              <use href={sprite + '#facebook'} color="red" />
+              <use href={sprite + "#facebook"} color="red" />
             </svg>
           </Socials>
           <Socials href="/" target="_blank" rel="noopener noreferrer nofollow">
             <svg height={24} width={24}>
-              <use href={sprite + '#instagram'} />
+              <use href={sprite + "#instagram"} />
             </svg>
           </Socials>
         </SocialsContainer>

@@ -1,4 +1,4 @@
-import { styled } from 'styled-components';
+import { styled } from "styled-components";
 
 export const Overlay = styled.div`
   position: fixed;
@@ -135,7 +135,7 @@ export const Socials = styled.a`
   height: 24px;
   width: 24px;
 
-  stroke: ${({ theme }) => theme.colors.darkGreen};
+  stroke: ${({ theme }) => theme.colors.white};
   fill: transparent;
   transition: stroke 400ms ease;
 

@@ -1,10 +1,14 @@
-import 'swiper/css';
-import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+import PropTypes from "prop-types";
 
-import { GoArrowUpRight } from 'react-icons/go';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/autoplay";
 
-import { slides } from '../../../constants/constants';
+import { Navigation, Autoplay } from "swiper/modules";
+
+import { GoArrowUpRight } from "react-icons/go";
+
+import { slides } from "../../../constants/constants";
 
 import {
   CasesList,
@@ -12,7 +16,7 @@ import {
   CasesThumb,
   MainInfoBox,
   InfoBox,
-} from './CasesSlides.styled';
+} from "./CasesSlides.styled";
 
 const CasesSlides = ({
   slidesPerView,
@@ -22,21 +26,22 @@ const CasesSlides = ({
 }) => {
   return (
     <CasesList
-      modules={[Navigation]}
+      modules={[Navigation, Autoplay]}
       speed={800}
       spaceBetween={slidesGap}
       slidesPerView={slidesPerView}
       grabCursor={true}
       navigation={{
-        nextEl: '.next-btn',
-        prevEl: '.prev-btn',
+        nextEl: ".next-btn",
+        prevEl: ".prev-btn",
         clickable: true,
       }}
+      autoplay={true}
       loop
       onSwiper={handleSwiper}
       onSlideChange={handleSlideChange}
     >
-      {slides.map(item => (
+      {slides.map((item) => (
         <CasesItem key={item.id}>
           <img
             src={item.image}
@@ -69,3 +74,10 @@ const CasesSlides = ({
 };
 
 export default CasesSlides;
+
+CasesSlides.propTypes = {
+  slidesPerView: PropTypes.number.isRequired,
+  slidesGap: PropTypes.number.isRequired,
+  handleSwiper: PropTypes.func.isRequired,
+  handleSlideChange: PropTypes.func.isRequired,
+};
