@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-import { ContactInfoContainer } from './ContactInfo.styled';
+import { ContactInfoContainer } from "./ContactInfo.styled";
 
 const ContactInfo = ({ gap }) => {
   return (
@@ -24,5 +24,5 @@ const ContactInfo = ({ gap }) => {
 export default ContactInfo;
 
 ContactInfo.propTypes = {
-  gap: PropTypes.string,
+  gap: PropTypes.string.isRequired,
 };

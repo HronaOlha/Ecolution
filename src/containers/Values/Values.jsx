@@ -1,23 +1,23 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-import sprite from '../../images/sprite.svg';
-import { values } from '../../constants/constants';
+import sprite from "../../images/sprite.svg";
+import { values } from "../../constants/constants";
 
-import windFarmTab1x from '../../images/wind-farms-tab-1x.jpg';
-import windFarmTab2x from '../../images/wind-farms-tab-2x.jpg';
-import windFarmDesk1x from '../../images/wind-farms-desk-1x.jpg';
-import windFarmDesk2x from '../../images/wind-farms-desk-2x.jpg';
-import workerTab1x from '../../images/worker-by-solar-panels-tab-1x.jpg';
-import workerTab2x from '../../images/worker-by-solar-panels-tab-2x.jpg';
-import workerDesk1x from '../../images/worker-by-solar-panels-desk-1x.jpg';
-import workerDesk2x from '../../images/worker-by-solar-panels-desk-2x.jpg';
+import windFarmTab1x from "../../images/wind-farms-tab-1x.jpg";
+import windFarmTab2x from "../../images/wind-farms-tab-2x.jpg";
+import windFarmDesk1x from "../../images/wind-farms-desk-1x.jpg";
+import windFarmDesk2x from "../../images/wind-farms-desk-2x.jpg";
+import workerTab1x from "../../images/worker-by-solar-panels-tab-1x.jpg";
+import workerTab2x from "../../images/worker-by-solar-panels-tab-2x.jpg";
+import workerDesk1x from "../../images/worker-by-solar-panels-desk-1x.jpg";
+import workerDesk2x from "../../images/worker-by-solar-panels-desk-2x.jpg";
 
 import {
   ValuesTexts,
   ValuesGrid,
   WindFarmImg,
   WorkerTab,
-} from './Values.styled';
+} from "./Values.styled";
 
 const Values = ({ deviceType }) => {
   return (
@@ -33,7 +33,7 @@ const Values = ({ deviceType }) => {
         </p>
       </ValuesTexts>
       <ValuesGrid>
-        {values.map(item => (
+        {values.map((item) => (
           <div key={item.id}>
             <h3>
               <svg>
@@ -45,7 +45,7 @@ const Values = ({ deviceType }) => {
           </div>
         ))}
 
-        {(deviceType === 'tablet' || deviceType === 'desktop') && (
+        {(deviceType === "tablet" || deviceType === "desktop") && (
           <>
             <WindFarmImg>
               <source
@@ -80,5 +80,5 @@ const Values = ({ deviceType }) => {
 export default Values;
 
 Values.propTypes = {
-  deviceType: PropTypes.string,
+  deviceType: PropTypes.string.isRequired,
 };

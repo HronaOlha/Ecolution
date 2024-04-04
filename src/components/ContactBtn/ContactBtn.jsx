@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-import { BsFillArrowDownCircleFill } from 'react-icons/bs';
+import { BsFillArrowDownCircleFill } from "react-icons/bs";
 
-import { Btn } from './ContactBtn.styled';
+import { Btn } from "./ContactBtn.styled";
 
 const ContactBtn = ({ text }) => {
   return (
@@ -16,5 +16,5 @@ const ContactBtn = ({ text }) => {
 export default ContactBtn;
 
 ContactBtn.propTypes = {
-  text: PropTypes.string,
+  text: PropTypes.string.isRequired,
 };

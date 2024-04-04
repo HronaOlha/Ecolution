@@ -89,5 +89,5 @@ const Header = ({ deviceType }) => {
 export default Header;
 
 Header.propTypes = {
-  deviceType: PropTypes.string,
+  deviceType: PropTypes.string.isRequired,
 };
