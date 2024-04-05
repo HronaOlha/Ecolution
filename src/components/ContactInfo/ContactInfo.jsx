@@ -24,5 +24,5 @@ const ContactInfo = ({ gap }) => {
 export default ContactInfo;
 
 ContactInfo.propTypes = {
-  gap: PropTypes.string.isRequired,
+  gap: PropTypes.string,
 };

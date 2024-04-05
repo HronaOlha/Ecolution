@@ -31,8 +31,10 @@ const BurgerMenu = forwardRef(({ handleMenuToggle }, ref) => {
           <PointsList>
             {links.map((item) => (
               <MenuItem key={item.id} onClick={handleMenuToggle}>
-                <ItemText href={item.link}>{item.value}</ItemText>
-                <GoArrowUpRight />
+                <ItemText href={item.link}>
+                  {item.value}
+                  <GoArrowUpRight />
+                </ItemText>
               </MenuItem>
             ))}
           </PointsList>
