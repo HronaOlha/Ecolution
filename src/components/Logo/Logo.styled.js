@@ -16,6 +16,8 @@ export const LogoImg = styled.img`
   opacity: 1;
   transition: opacity 400ms ease;
 
+  width: 170px;
+
   ${LogoContainer}:focus &, ${LogoContainer}:hover & {
     opacity: 0;
   }
@@ -26,6 +28,8 @@ export const LogoHover = styled.img`
 
   opacity: 0;
   transition: opacity 400ms ease;
+
+  width: 170px;
 
   ${LogoContainer}:focus &, ${LogoContainer}:hover & {
     opacity: 1;
